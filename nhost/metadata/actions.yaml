@@ -2,7 +2,7 @@ actions:
 - name: create_group
   definition:
     kind: synchronous
-    handler: https://viva.loca.lt/api/groups/create
+    handler: '{{SERVER_URL}}/api/groups/create'
 - name: invite_member
   definition:
     kind: synchronous
