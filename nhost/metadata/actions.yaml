@@ -19,10 +19,6 @@ actions:
   definition:
     kind: synchronous
     handler: '{{SERVER_URL}}/api/payments/withdraw'
-- name: test_action
-  definition:
-    kind: synchronous
-    handler: https://viva.loca.lt/api/groups/create
 custom_types:
   enums:
   - name: Recurrencies
@@ -68,6 +64,9 @@ custom_types:
   - name: PaymentRequestInput
   - name: PaymentWithdrawInput
   - name: SampleInput
+  - name: Input
+  - name: InputTest
+  - name: TestInput
   objects:
   - name: CreateGroupOutput
   - name: InviteMemberOutput
@@ -75,4 +74,7 @@ custom_types:
   - name: PaymentRequestOutput
   - name: PaymentWithdrawOutput
   - name: SampleOutput
+  - name: Output
+  - name: OutputTest
+  - name: TestOutput
   scalars: []
