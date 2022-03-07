@@ -3,6 +3,10 @@ actions:
   definition:
     kind: synchronous
     handler: '{{SERVER_URL}}/api/groups/create'
+- name: discover_contacts
+  definition:
+    kind: asynchronous
+    handler: '{{SERVER_URL}}/api/contacts/discovery'
 - name: invite_member
   definition:
     kind: synchronous
@@ -67,6 +71,7 @@ custom_types:
   - name: Input
   - name: InputTest
   - name: TestInput
+  - name: DiscoverContactsInput
   objects:
   - name: CreateGroupOutput
   - name: InviteMemberOutput
@@ -77,4 +82,5 @@ custom_types:
   - name: Output
   - name: OutputTest
   - name: TestOutput
+  - name: DiscoverContactsOutput
   scalars: []

@@ -5,6 +5,12 @@ type Mutation {
 }
 
 type Mutation {
+  discover_contacts(
+    arg: DiscoverContactsInput!
+  ): DiscoverContactsOutput
+}
+
+type Mutation {
   invite_member(
     arg: InviteMemberInput!
   ): InviteMemberOutput
@@ -110,6 +116,10 @@ input TestInput {
   completion: String!
 }
 
+input DiscoverContactsInput {
+  phones: String!
+}
+
 type CreateGroupOutput {
   ok: Boolean!
 }
@@ -145,5 +155,9 @@ type OutputTest {
 
 type TestOutput {
   result: [String]!
+}
+
+type DiscoverContactsOutput {
+  result: String!
 }
 
