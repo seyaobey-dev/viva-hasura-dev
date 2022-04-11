@@ -138,7 +138,7 @@ type PaymentRequestOutput {
 }
 
 type PaymentWithdrawOutput {
-  Ok: Boolean!
+  ok: Boolean!
 }
 
 type SampleOutput {
