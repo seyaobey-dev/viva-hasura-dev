@@ -37,3 +37,14 @@ array_relationships:
       table:
         name: periods
         schema: public
+event_triggers:
+- definition:
+    enable_manual: false
+    insert:
+      columns: "*"
+  name: group_created
+  retry_conf:
+    interval_sec: 10
+    num_retries: 0
+    timeout_sec: 60
+  webhook: "{{SERVER_URL}}/api/groups/created"

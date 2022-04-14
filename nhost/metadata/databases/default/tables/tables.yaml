@@ -8,6 +8,7 @@
 - "!include auth_users.yaml"
 - "!include public_groups.yaml"
 - "!include public_invitation_statuses.yaml"
+- "!include public_invitation_types.yaml"
 - "!include public_invitations.yaml"
 - "!include public_members.yaml"
 - "!include public_payment_statuses.yaml"

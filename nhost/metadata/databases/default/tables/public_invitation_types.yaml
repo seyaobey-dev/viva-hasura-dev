@@ -1,0 +1,4 @@
+table:
+  name: invitation_types
+  schema: public
+is_enum: true
